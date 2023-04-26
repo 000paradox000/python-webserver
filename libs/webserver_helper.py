@@ -38,7 +38,7 @@ class WebServerHelper(threading.Thread):
                 server_side=True,
                 certfile=self.cert_path.as_posix(),
                 keyfile=self.key_path.as_posix(),
-                ssl_version=ssl.PROTOCOL_TLSv1
+                ssl_version=ssl.PROTOCOL_SSLv23
            )
 
         server.serve_forever()
